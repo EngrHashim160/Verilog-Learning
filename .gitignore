@@ -1,0 +1,5 @@
+# Compiled simulation files
+*.out
+
+# Waveform dump files
+*.vcd
