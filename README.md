@@ -30,11 +30,22 @@ Verilog_Learning/
 │   ├── nor_gate/
 │   ├── xor_gate/
 │   └── xnor_gate/
+├── combinational/
+│   ├── half_adder/
+│   └── full_adder/
+├── mux/
+│   ├── mux_2to1/
+│   ├── mux_4to1/
+│   ├── mux_2to1_always/
+│   └── mux_4to1_always/
+├── flipflops/
+├── notes/
+├── waveforms/
 ├── .gitignore
 └── README.md
 ```
 
-Each gate folder contains:
+Each circuit folder contains:
 - `design.v` — the Verilog module describing the circuit
 - `testbench.v` — the test program that applies inputs and records output
 
@@ -42,14 +53,14 @@ Each gate folder contains:
 
 ## How to Run a Simulation
 
-From inside any gate folder, run these commands:
+From inside any circuit folder, run these commands:
 
 ```bash
 # 1. Compile the design and testbench
-iverilog -o gate.out design.v testbench.v
+iverilog -o sim.out design.v testbench.v
 
 # 2. Run the simulation (generates dump.vcd)
-vvp gate.out
+vvp sim.out
 
 # 3. View the waveform
 gtkwave dump.vcd
@@ -69,13 +80,17 @@ gtkwave dump.vcd
 - [x] XNOR gate
 
 ### Combinational Circuits
-- [ ] Half Adder
-- [ ] Full Adder
-- [ ] Multiplexer
+- [x] Half Adder
+- [x] Full Adder
+- [x] 2:1 Multiplexer (assign style)
+- [x] 4:1 Multiplexer (assign style)
+- [x] 2:1 Multiplexer (always block style)
+- [x] 4:1 Multiplexer (always block style)
 
 ### Sequential Logic
-- [ ] always blocks
-- [ ] Flip-flops
+- [ ] D Flip-flop
+- [ ] T Flip-flop
+- [ ] JK Flip-flop
 - [ ] Counters
 - [ ] Finite State Machines (FSM)
 
@@ -95,4 +110,4 @@ gtkwave dump.vcd
 
 ## Author
 
-**Hashim** — learning Verilog one gate at a time.
+**Hashim** — learning Verilog one circuit at a time.
