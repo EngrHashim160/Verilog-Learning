@@ -39,6 +39,7 @@ Verilog_Learning/
 │   ├── mux_2to1_always/
 │   └── mux_4to1_always/
 ├── flipflops/
+│   └── d_flip_flop/
 ├── notes/
 ├── waveforms/
 ├── .gitignore
@@ -68,9 +69,9 @@ gtkwave dump.vcd
 
 ---
 
-## Topics Covered
+## Learning Roadmap
 
-### Logic Gates
+### Stage 1 — Logic Gates (Done)
 - [x] AND gate
 - [x] OR gate
 - [x] NOT gate
@@ -79,7 +80,7 @@ gtkwave dump.vcd
 - [x] XOR gate
 - [x] XNOR gate
 
-### Combinational Circuits
+### Stage 2 — Combinational Circuits (Done)
 - [x] Half Adder
 - [x] Full Adder
 - [x] 2:1 Multiplexer (assign style)
@@ -87,12 +88,23 @@ gtkwave dump.vcd
 - [x] 2:1 Multiplexer (always block style)
 - [x] 4:1 Multiplexer (always block style)
 
-### Sequential Logic
-- [ ] D Flip-flop
-- [ ] T Flip-flop
-- [ ] JK Flip-flop
-- [ ] Counters
-- [ ] Finite State Machines (FSM)
+### Stage 3 — Sequential Logic (In Progress)
+- [x] D Flip-Flop
+- [ ] D Flip-Flop with reset
+- [ ] T Flip-Flop
+- [ ] JK Flip-Flop
+- [ ] Synchronous vs Asynchronous reset
+
+### Stage 4 — Counters (Upcoming)
+- [ ] 4-bit Up Counter
+- [ ] 4-bit Down Counter
+- [ ] Up/Down Counter
+- [ ] Modulo-N Counter
+
+### Stage 5 — Finite State Machines (Final Goal)
+- [ ] FSM theory (Moore vs Mealy)
+- [ ] Traffic Light Controller (FSM example)
+- [ ] Sequence Detector (FSM example)
 
 ---
 
